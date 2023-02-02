@@ -22,7 +22,7 @@ public class ProyectoETS{
         */
 	static boolean existeCuenta(int num_c){
 		if(!(usuarios.containsKey(num_c))){
-			System.out.println("Numero de cuenta no registrado");
+			System.out.println("Numero de cuenta no registrado correctamente");
 			return false;
 		}
 		return true;
@@ -44,7 +44,7 @@ public class ProyectoETS{
 				System.out.print("Introduzca el dinero en su "+transaccion+": ");
 				dinero = scan.nextFloat();
 			}catch(InputMismatchException e){
-				System.out.println("Solo introduzca números, por favor");
+				System.out.println("Solo introduzca números, por favor. Gracias");
 				scan.next();
 				control = false;
 			}
